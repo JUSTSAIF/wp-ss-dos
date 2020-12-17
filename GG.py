@@ -1,4 +1,4 @@
-import requests, time, threading
+import requests, threading ,time
 from colorama import Fore, init
 init()
 print(Fore.MAGENTA+"""
@@ -18,7 +18,7 @@ print(Fore.MAGENTA+"""
 
 def startDS(wp, ch):
     try:
-        head = {
+        hdr = {
             "User-Agent":"Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/78.0.3904.70 Chrome/78.0.3904.70 Safari/537.36"
         }
         if ch == "1":
@@ -28,7 +28,7 @@ def startDS(wp, ch):
         else:
             input("Err :: Choose One 1 or 2 !!")
             exit()
-        req = requests.get(target, headers=head)
+        req = requests.get(target, headers=hdr)
         res = req.text  
         if "window" in res:
             print(Fore.GREEN+"  [+] SUCCESS ")
