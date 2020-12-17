@@ -3,6 +3,8 @@
 
 Programmed By : Python
 
+## Notice 🛑⚠ ::  This Tool Work Only on WordPress Websites ( & may work just in some WP versions 😅 )
+
 ## Used libraries :
 - requests
 - threading
